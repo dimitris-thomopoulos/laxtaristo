@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+=============================================
+*/
+
+
+/* HEADER STYLES */
+
+
+button, img, svg, iframe, video {
+    user-select: none;
+}
+
+body *::selection {
+    background:#C64317;
+    color: white;
+}
+
+button,a,h1,h3,h4,h6 {
+    font-family: Jura;
+}
+
+p,span {
+    font-family: Manrope;
+}
+
+h2,h5 {
+    font-family: 'Knewave';
+}
+
+h1 {
+    color: #C64317;
+    font-weight: 500;
+    font-size: 56px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, #logo {
+    height: 174px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8EAD4;
+}
+
+#logo, #weekly-offer {
+    position: absolute;
+}
+
+#logo {
+    left: 0;
+    padding-left: 30px;
+}
+
+#weekly-offer {
+    right: 0;
+    top: 0;
+}
+
+nav, nav > ul, nav > ul > li {
+    display: inline;
+    text-align: center;
+}
+
+.nav-item > a {
+    width: 100%;
+}
+
+.nav-item-inactive a {
+    color: #846060;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item-inactive a:hover {
+    color: #AA1717;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item-active a {
+    color: #AA1717;
+    font-weight: 700;
+}
+
+.top-nav-item:not(.top-nav-item:nth-of-type(1)):not(.top-nav-item:nth-of-type(6)) {
+    margin: 0 20px;
+}
+
+.top-nav-item:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.top-nav-item:nth-of-type(6) {
+    margin-left: 20px;
+}
+
+
+
+
+/* MENU SECTION */
+
+section.menu-category > h1 {
+    margin: 15px 0 120px 0;
+    display: inline-block;
+}
+
+section.menu-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8EAD4;
+}
+
+.menu-food {
+    display: flex;
+    align-items: center;
+}
+
+.menu-food .right {
+    margin-left: 160px;
+}
+
+.menu-food .left, .menu-food .right {
+    display: inline-block;
+}
+
+.menu-food img {
+    display: flex;
+    max-height: 560px;
+}
+
+.food-title {
+    font-size: 42px;
+}
+
+.food-price {
+    font-size: 24px;
+}
+
+.food-description {
+    max-width: 480px;
+    margin: 30px 0 60px 0;
+}
+
+.food-title, .food-price {
+    display: inline-block;
+}
+
+.food-price {
+    margin-left: 30px;
+}
+
+.icon-separator {
+    width: 1px;
+    height: 92px;
+    display: inline-block;
+}
+
+.food-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.food-icons .col {
+    display: inline-block;
+    text-align: center;
+}
+
+.food-icons .col h6 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-top: 25px;
+    letter-spacing: initial;
+    transition: letter-spacing 0.3s ease-in-out;
+}
+
+.food-icons .col img {
+    padding: 0 40px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-icons .col:hover h6 {
+    letter-spacing: 1.2px;
+    transition: letter-spacing 0.3s ease-in-out;
+}
+
+.food-icons .col:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-food .left .button-area {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* BURGERS SECTION */
+
+#burgers .food-price {
+    color: #C64317;
+    text-shadow: 2px 2px #FBDB32;
+}
+
+#burgers .food-title {
+    color: #982A3A;
+}
+
+#burgers .food-description {
+    color: #883417;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#burgers .icon-separator {
+    background-color: rgba(152,42,58,0.2);
+}
+
+#burgers .food-icons .col h6 {
+    color: #982A3A;
+}
+
+#burgers .add-to-cart {
+    border: none;
+    padding: 13px 22px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #C64317;
+    box-shadow: -5px 5px #FFB72B;
+    transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#burgers button.add-to-cart:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px #FFB72B;
+    background-color: #982A3A;
+    transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+}

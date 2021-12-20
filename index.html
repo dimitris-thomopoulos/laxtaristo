@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laxtaristo - Burger, Πίτσα, Σαλάτα</title>
     <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
@@ -80,9 +87,141 @@
 
         <div id="chicken-dinner" class="menu-food">
 
+            <div class="left">
+                <img src="./images/burgers/chicken-dinner.png" alt="Chicken Dinner">
+            </div>
+
+            <div class="right">
+                <h2 class="food-title">Chicken Dinner</h2>
+                <h5 class="food-price">4,20€</h5>
+                <p class="food-description">
+                    Το συγκεκριμένο burger αποτελεί ένα ωραίο mix διάφορων κρεατικών που συνοδεύονται από διάφορα φρέσκα υλικά και πετυχαίνει τον τέλειο συνδυασμό κοτόπουλου με μπιφτέκι. Είναι ιδανικό για όσους είναι πρόθυμοι να δοκιμάσουν νέες, πιο έντονες γεύσεις.<br/><br/>Υλικά: Μπιφτέκι, κοτόπουλο, μπέικον, γκούντα, ντομάτα, κρεμμύδι, μαρούλι, κέτσαπ, μαγιονέζα
+                </p>
+
+                <div class="food-icons">
+                    <div class="col col-1">
+                        <img src="./images/SVGs/food-info/free-drink.svg" alt="Δώρο αναψυκτικό">
+                        <h6>ΔΩΡΟ<br/>ΑΝΑΨΥΚΤΙΚΟ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-2">
+                        <img src="./images/SVGs/food-info/fresh-ingredients.svg" alt="Φρέσκα υλικά">
+                        <h6>ΦΡΕΣΚΑ<br/>ΥΛΙΚΑ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-3">
+                        <img src="./images/SVGs/food-info/with-chips.svg" alt="Συνοδεύεται με πατάτες">
+                        <h6>ΣΥΝΟΔΕΥΕΤΑΙ<br/>ΜΕ ΠΑΤΑΤΕΣ</h6>
+                    </div>
+                </div>
+
+                <div class="button-area">
+                    <button class="add-to-cart" action="#add-to-cart">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="show-more" action="#more">ΠΕΡΙΣΣΟΤΕΡΑ</button>
+    </section>
+
+    
+    
+    <section id="pizza" class="menu-category">
+        <h1>ΠΙΤΣΕΣ</h1>
+        
+        <div id="pepperoni-hell" class="menu-food">
+            
+            <div class="left">
+                <h2 class="food-title">Pepperoni Hell</h2>
+                <h5 class="food-price">8,00€</h5>
+                <p class="food-description">
+                    Η λαχταριστή αυτή πίτσα εγγυάται την απόλαυση πικάντικων και καυτερών γεύσεων με την πιο φρέσκια ζύμη και υλικά. Αποτελεί μία από τις πιο καυτερές πίτσες που έχουμε στο μενού μας.<br/><br/>Υλικά: Τυρί, σάλτσα ντομάτας, μπέικον, πεππερόνι, κιμάς
+                </p>
+
+                <div class="food-icons">
+                    <div class="col col-1">
+                        <img src="./images/SVGs/food-info/afrati-zimi.svg" alt="Αφράτη ζύμη">
+                        <h6>ΑΦΡΑΤΗ<br/>ΖΥΜΗ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-2">
+                        <img src="./images/SVGs/food-info/fresh-ingredients-pizza.svg" alt="Φρέσκα υλικά">
+                        <h6>ΦΡΕΣΚΑ<br/>ΥΛΙΚΑ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-3">
+                        <img src="./images/SVGs/food-info/pizza-pieces.svg" alt="10 κομμάτια">
+                        <h6>10 ΚΟΜΜΑΤΙΑ<br/>(2 ΑΤΟΜΩΝ)</h6>
+                    </div>
+                </div>
+
+                <div class="button-area">
+                    <button class="add-to-cart" action="#add-to-cart">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</button>
+                </div>
+
+            </div>
+
+
+            <div class="right">
+                <img src="./images/pizzas/pepperoni-hell.png" alt="Pepperoni Hell">
+            </div>
+
         </div>
 
 
+        <div id="xoriatiki-classic" class="menu-food">
+
+            <div class="left">
+                <img src="./images/pizzas/xoriatiki-classic.png" alt="Xoriatiki Classic">
+            </div>
+
+            <div class="right">
+                <h2 class="food-title">Xoriatiki Classic</h2>
+                <h5 class="food-price">9,20€</h5>
+                <p class="food-description">
+                    Η παραδοσιακή χωριάτικη πίτσα, όπως την ξέρατε πάντα. Φρέσκια, με παραδοσιακά υλικά, οικείες μυρωδιές και γεύσεις από το ελληνικό μεσογειακό φαγητό, η χωριάτικη είναι η τέλεια επιλογή για τους λάτρεις της φέτας.<br/><br/>Υλικά: Τυρί, φέτα, ελιές, κρεμμύδι, πιπεριές, μανιτάρια
+                </p>
+
+                <div class="food-icons">
+                    <div class="col col-1">
+                        <img src="./images/SVGs/food-info/afrati-zimi.svg" alt="Αφράτη ζύμη">
+                        <h6>ΑΦΡΑΤΗ<br/>ΖΥΜΗ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-2">
+                        <img src="./images/SVGs/food-info/fresh-ingredients-pizza.svg" alt="Φρέσκα υλικά">
+                        <h6>ΦΡΕΣΚΑ<br/>ΥΛΙΚΑ</h6>
+                    </div>
+
+                    <div class="icon-separator"></div>
+
+                    <div class="col col-3">
+                        <img src="./images/SVGs/food-info/pizza-pieces.svg" alt="10 κομμάτια">
+                        <h6>10 ΚΟΜΜΑΤΙΑ<br/>(2 ΑΤΟΜΩΝ)</h6>
+                    </div>
+                </div>
+
+                <div class="button-area">
+                    <button class="add-to-cart" action="#add-to-cart">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="show-more" action="#more">ΠΕΡΙΣΣΟΤΕΡΑ</button>
     </section>
 
 

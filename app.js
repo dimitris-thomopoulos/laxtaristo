@@ -1,4 +1,4 @@
-/* sticky navbar */
+/* sticky navbar and sticky mobile navigation menu*/
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -17,6 +17,17 @@ let burgersNav = document.querySelector('li.top-nav-item a[href="#burgers"]');
 let pizzaNav = document.querySelector('li.top-nav-item a[href="#pizza"]');
 let salatesNav = document.querySelector('li.top-nav-item a[href="#salates"]');
 let contactNav = document.querySelector('li.top-nav-item a[href="#contact"]');
+
+
+let burgerMenu = document.querySelector("#burger-menu");
+
+let knifeIcon = document.querySelector("#burger-menu > img:nth-of-type(1)");
+let spoonIcon = document.querySelector("#burger-menu > img:nth-of-type(2)");
+let forkIcon = document.querySelector("#burger-menu > img:nth-of-type(3)");
+
+let mobileNav = document.querySelector("#mobile-nav");
+let mobileNavLink = [...document.querySelectorAll("#mobile-nav > ul > li > a")];
+
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
@@ -37,6 +48,20 @@ function myFunction() {
     contactNav.classList.remove('active');
     homeNav.classList.add('active');
   }
+
+  if (mobileNav.classList.contains('visible')) {
+    
+    mobileNav.classList.toggle('visible');
+
+    knifeIcon.classList.toggle('animate-icon');
+    spoonIcon.classList.toggle('animate-icon');
+    forkIcon.classList.toggle('animate-icon')
+    
+    for (let i=0; i<mobileNavLink.length; i++) {
+        mobileNavLink[i].classList.toggle('visible');
+    }
+  }
+
 }
 
 
@@ -189,6 +214,29 @@ document.querySelector('nav#footer-nav2 a[href="#salates"').addEventListener('cl
 // menuCategories.forEach(category => {
 //     observer.observe(category);
 // })
+
+
+
+
+// Burger menu click animation (for mobile)
+
+burgerMenu.addEventListener('click', () => {
+
+    knifeIcon.classList.toggle('animate-icon');
+    spoonIcon.classList.toggle('animate-icon');
+    forkIcon.classList.toggle('animate-icon');
+
+    mobileNav.classList.toggle('visible');
+    // HTMLDivElement.style.margin = ('0');
+    // body.classList.toggle('activeMobileNav');
+    
+    for (let i=0; i<mobileNavLink.length; i++) {
+        mobileNavLink[i].classList.toggle('visible');
+    }
+})
+
+
+
 
 
 

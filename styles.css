@@ -1094,6 +1094,15 @@ footer {
         text-align: center;
     }
 
+    .food-description {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .food-price {
+        margin-left: 15px;
+    }
+
     #double-trouble > .right {
         display: none;
     }
@@ -1251,5 +1260,21 @@ footer {
 
     header > a#logo > img {
         width: 180px;
+    }
+}
+
+@media (max-width: 350px) {
+    .food-price {
+        font-size: 18px;
+    }
+
+    .food-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 329px) {
+    .food-price {
+        margin-left: 5px;
     }
 }

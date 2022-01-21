@@ -151,7 +151,7 @@ header, #logo {
 }
 
 #navbar > #logo > img {
-    trasnform: scale(1);
+    transform: scale(1);
     transition: all 0.3s ease-in-out;
 }
 
@@ -924,50 +924,49 @@ footer {
 
 /* ADDED TO CART OVERLAY */
 
-#added-to-cart {
-    position: absolute;
-    top: 50%;
-    margin: auto;
-    width: 350px;
-    padding: 50px 100px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    text-align: center;
-    transform: scale(0.001);
-    z-index: 20;
-
-    background: rgb(248, 234, 212);
-    backdrop-filter: blur(6px);
-}
-
-#overlay {
-    position: absolute;
+/* #added-to-cart {
+    position: fixed;
     top: 0;
-    z-index: 55;
     width: 100vw;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(6px);
     transition: all 0.3s ease-in-out;
     opacity: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+} */
+
+#added-to-cart {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    width: 350px;
+    padding: 25px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    transform: scale(0.001) translate(-50%,-50%);
+    opacity: 0;
+    z-index: 20;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-#overlay.hidden {
+#added-to-cart.hidden {
     display: none;
     opacity: 0;
 }
 
 #added-to-cart h3 {
-    margin-bottom: 50px;
-    font-size: 26px;
+    margin-bottom: 30px;
+    font-size: 24px;
     color: #79212E;
     font-weight: 500;
 }
 
 #added-to-cart button {
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 50px;
     background-color: green;
     color: white;
@@ -981,8 +980,9 @@ footer {
 }
 
 #added-to-cart.open {
-    transform: scale(1);
-    transition: scale 0.2s ease-in-out;
+    opacity: 1;
+    transform: scale(1) translate(-50%,-50%);
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 
@@ -1233,6 +1233,16 @@ footer {
         font-size: 20px;
     }
 
+    #added-to-cart {
+        width: 250px;
+    }
+
+    #added-to-cart h3 {
+        font-size: 20px;
+    }
+
+
+
 }
 
 @media (max-width: 420px) {
@@ -1247,6 +1257,14 @@ footer {
 
     .food-icons .col {
         margin: 25px 0;
+    }
+    
+    #added-to-cart {
+        padding: 18px 20px;
+    }
+
+    #added-to-cart h3 {
+        font-size: 18px;
     }
 
 }

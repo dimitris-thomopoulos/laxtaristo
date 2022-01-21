@@ -237,29 +237,25 @@ burgerMenu.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
 // Add to cart overlay window
 
-// let addToCartButtons = [...document.querySelectorAll('.add-to-cart')];
-// let addedToCartNotification = document.getElementById('added-to-cart');
-// let darkenOverlay = document.getElementById('overlay');
-// let okay = document.getElementById('okay');
+let addToCartButtons = [...document.querySelectorAll('.add-to-cart')];
+let addedToCartNotification = document.getElementById('added-to-cart');
+let okay = document.getElementById('okay');
 
 
 
-// for (let i=0; i<addToCartButtons.length; i++) {
-//     addToCartButtons[i].addEventListener('click', () => {
-//         addedToCartNotification.classList.toggle('open');
-//         darkenOverlay.classList.toggle('hidden');
-//     })
-// }
+for (let i=0; i<addToCartButtons.length; i++) {
+    addToCartButtons[i].addEventListener('click', () => {
+        if (!(addToCartButtons[i].classList.contains('in-cart'))) {
+            addedToCartNotification.classList.add('open');
+            addToCartButtons[i].classList.add('in-cart');
+        } else {
+            alert("Το προϊόν βρίσκεται ήδη στο καλάθι σας!")
+        }
+    })
+}
 
-// okay.addEventListener('click', () => {
-//     addedToCartNotification.classList.toggle('open');
-//     darkenOverlay.classList.toggle('hidden');
-// })
+okay.addEventListener('click', () => {
+    addedToCartNotification.classList.remove('open');
+})
